@@ -75,10 +75,17 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
 
       {/* Hero Section */}
       <section className="pt-14 pb-16 px-4 sm:px-8 max-w-7xl mx-auto text-center w-full">
-        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-white shadow-aisle text-[10.5px] sm:text-[12.5px] font-medium text-slate-600 mb-4 sm:mb-6 max-w-full">
+        {/* <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-white shadow-aisle text-[10.5px] sm:text-[12.5px] font-medium text-slate-600 mb-4 sm:mb-6 max-w-full">
           <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#2563EB] shrink-0" />
           <span>AI-Powered Communication OS for Indian Marketplace Sellers</span>
-        </div>
+        </div> */}
+        <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full bg-white shadow-aisle text-[10.5px] sm:text-[12.5px] font-medium text-slate-600 mb-4 sm:mb-6 max-w-full">
+  <span className="relative flex h-1.5 w-1.5 sm:h-2 sm:w-2 shrink-0">
+    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#2563EB] opacity-75"></span>
+    <span className="relative inline-flex rounded-full h-1.5 w-1.5 sm:h-2 sm:w-2 bg-[#2563EB]"></span>
+  </span>
+  <span>AI-Powered Communication OS for Indian Marketplace Sellers</span>
+</div>
         <h1 className="font-display text-4xl sm:text-5xl lg:text-[56px] font-semibold text-slate-900 tracking-tight leading-[1.1] max-w-4xl mx-auto">
           Automate calls, WhatsApp &amp; delivery updates with <span className="text-[#2563EB]">quiet precision.</span>
         </h1>
