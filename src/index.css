@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+  --color-canvas: #F2F4F8;
+  --color-surface: #FFFFFF;
+  --color-brand-50: #EFF6FF;
+  --color-brand-100: #DBEAFE;
+  --color-brand-500: #3B82F6;
+  --color-brand-600: #2563EB;
+  --color-brand-700: #1D4ED8;
+  --shadow-aisle: 0 2px 10px -2px rgba(15, 23, 42, 0.03), 0 1px 3px -1px rgba(15, 23, 42, 0.02);
+  --shadow-aisle-md: 0 8px 24px -4px rgba(15, 23, 42, 0.05), 0 2px 6px -1px rgba(15, 23, 42, 0.03);
+  --shadow-aisle-frame: 0 24px 60px -12px rgba(15, 23, 42, 0.12), 0 0 1px 1px rgba(15, 23, 42, 0.04);
+}
+
+body {
+  background-color: #F2F4F8;
+  color: #0F172A;
+  font-family: var(--font-sans);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+.metric-tracking {
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Smooth staggered bottom-to-up entrance motion on page/view entry */
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.view-section > :not(.grid):not(.fixed) {
+  animation: riseIn 0.48s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+.view-section > :not(.grid):not(.fixed):nth-child(1) { animation-delay: 0ms; }
+.view-section > :not(.grid):not(.fixed):nth-child(2) { animation-delay: 140ms; }
+.view-section > :not(.grid):not(.fixed):nth-child(3) { animation-delay: 220ms; }
+.view-section > :not(.grid):not(.fixed):nth-child(4) { animation-delay: 280ms; }
+.view-section > :not(.grid):not(.fixed):nth-child(n + 5) { animation-delay: 340ms; }
+
+.view-section > .grid > * {
+  animation: riseIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+.view-section > .grid:nth-child(2) > * { --row-offset: 70ms; }
+.view-section > .grid:nth-child(3) > * { --row-offset: 200ms; }
+.view-section > .grid:nth-child(n + 4) > * { --row-offset: 280ms; }
+
+.view-section > .grid > *:nth-child(1) { animation-delay: calc(var(--row-offset, 0ms) + 0ms); }
+.view-section > .grid > *:nth-child(2) { animation-delay: calc(var(--row-offset, 0ms) + 55ms); }
+.view-section > .grid > *:nth-child(3) { animation-delay: calc(var(--row-offset, 0ms) + 110ms); }
+.view-section > .grid > *:nth-child(4) { animation-delay: calc(var(--row-offset, 0ms) + 165ms); }
+.view-section > .grid > *:nth-child(5) { animation-delay: calc(var(--row-offset, 0ms) + 220ms); }
+.view-section > .grid > *:nth-child(6) { animation-delay: calc(var(--row-offset, 0ms) + 275ms); }
+.view-section > .grid > *:nth-child(n + 7) { animation-delay: calc(var(--row-offset, 0ms) + 320ms); }
+
+@media (prefers-reduced-motion: reduce) {
+  .view-section > :not(.grid):not(.fixed),
+  .view-section > .grid > * {
+    animation: none;
+  }
+}
+
+/* Waveform bar animation when playing */
+@keyframes pulseBar {
+  0%, 100% { transform: scaleY(0.45); }
+  50% { transform: scaleY(1); }
+}
+.waveform-playing .wave-bar {
+  animation: pulseBar 0.9s ease-in-out infinite;
+  transform-origin: center;
+}

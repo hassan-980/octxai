@@ -1,0 +1,6 @@
+{
+  "name": "SellerSaathi — AI Communication OS for Sellers",
+  "description": "AI-powered communication OS for Indian marketplace sellers: automate COD verification calls, WhatsApp flows, live courier tracking, customer feedback, and billing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
