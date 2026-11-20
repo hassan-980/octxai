@@ -48,7 +48,7 @@ const DEMO_ACCOUNTS = [
     phone: '+91 98765 43210',
   },
   {
-    email: 'aman.kumar@sellersaathi.com',
+    email: 'aman.kumar@Octxai.com',
     password: 'password123',
     fullName: 'Aman Kumar',
     businessName: 'Aman Store',

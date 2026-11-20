@@ -29,7 +29,7 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
       records: `${orders.length} live rows`,
       action: () => {
         downloadCSV(
-          'sellersaathi-orders-report.csv',
+          'Octxai-orders-report.csv',
           ['Order ID', 'Customer', 'Product', 'Amount', 'Mode', 'Channel', 'Status'],
           orders.map((o) => [o.id, o.customer, o.product, o.amount, o.paymentMode, o.channel, o.status])
         );
@@ -44,7 +44,7 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
       records: `${calls.length} call logs`,
       action: () => {
         downloadCSV(
-          'sellersaathi-ai-calls-report.csv',
+          'Octxai-ai-calls-report.csv',
           ['Order ID', 'Customer', 'Phone', 'Voice', 'Call Type', 'Duration', 'Status', 'Outcome'],
           calls.map((c) => [c.id, c.name, c.phone, c.voice, c.callType, c.duration, c.status, c.outcomeTitle])
         );
@@ -59,7 +59,7 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
       records: '15,692 messages',
       action: () => {
         downloadCSV(
-          'sellersaathi-whatsapp-report.csv',
+          'Octxai-whatsapp-report.csv',
           ['Metric', 'Count', 'Rate'],
           [
             ['Messages Sent', 15692, '100%'],
@@ -80,7 +80,7 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
       records: `${shipments.length} shipments`,
       action: () => {
         downloadCSV(
-          'sellersaathi-courier-ndr-report.csv',
+          'Octxai-courier-ndr-report.csv',
           ['Order ID', 'Customer', 'Courier', 'AWB', 'Status', 'Pickup Date', 'ETA'],
           shipments.map((s) => [s.orderId, s.customer, s.courier, s.awb, s.status, s.pickupDate, s.eta])
         );
@@ -95,7 +95,7 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
       records: `${reviews.length} recent reviews`,
       action: () => {
         downloadCSV(
-          'sellersaathi-sentiment-report.csv',
+          'Octxai-sentiment-report.csv',
           ['Order ID', 'Customer', 'Rating', 'Sentiment', 'Tags', 'Comment'],
           reviews.map((r) => [r.orderId, r.customer, r.rating, r.sentiment, r.tags.join('; '), r.comment])
         );

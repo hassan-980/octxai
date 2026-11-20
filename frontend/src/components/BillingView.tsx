@@ -93,7 +93,7 @@ export const BillingView: React.FC<BillingViewProps> = ({
   const handleDownloadInvoice = (inv: GSTInvoice) => {
     downloadTextFile(
       `${inv.id}.txt`,
-      `TAX INVOICE — SellerSaathi AI Technologies Pvt. Ltd.\nInvoice: ${inv.id}\nPeriod: ${inv.period}\nIssued: ${inv.issuedDate}\nBase Amount: ${formatINR(inv.amount)}\nGST (18%): ${formatINR(inv.gstAmount, true)}\nStatus: ${inv.status}\n`
+      `TAX INVOICE — Octxai AI Technologies Pvt. Ltd.\nInvoice: ${inv.id}\nPeriod: ${inv.period}\nIssued: ${inv.issuedDate}\nBase Amount: ${formatINR(inv.amount)}\nGST (18%): ${formatINR(inv.gstAmount, true)}\nStatus: ${inv.status}\n`
     );
     onShowToast(`GST Invoice ${inv.id} downloaded`);
   };

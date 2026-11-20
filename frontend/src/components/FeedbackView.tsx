@@ -67,7 +67,7 @@ export const FeedbackView: React.FC<FeedbackViewProps> = ({
 
   const handleExport = () => {
     downloadCSV(
-      'sellersaathi-feedback.csv',
+      'Octxai-feedback.csv',
       ['Order ID', 'Customer', 'Phone', 'Rating', 'Sentiment', 'Tags', 'Comment', 'Date'],
       filteredReviews.map((r) => [r.orderId, r.customer, r.phone, r.rating, r.sentiment, r.tags.join('; '), r.comment, r.date])
     );

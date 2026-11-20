@@ -452,7 +452,7 @@ export const SettingsView: React.FC<SettingsViewProps> = ({
                 <div className="flex items-center justify-between">
                   <span className="text-[13px] font-semibold text-slate-900 flex items-center gap-2">
                     <Key className="w-4 h-4 text-[#2563EB]" />
-                    <span>SellerSaathi Production API Key</span>
+                    <span>Octxai Production API Key</span>
                   </span>
                   <button
                     onClick={() => {

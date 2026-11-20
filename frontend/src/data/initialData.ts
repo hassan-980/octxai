@@ -183,7 +183,7 @@ export const INITIAL_AI_CALLS: AICall[] = [
       {
         speaker: 'AI (Neha)',
         time: '10:30 AM',
-        text: 'Namaste Rahul ji, main SellerSaathi AI bol rahi hoon. Aapka order Bluetooth Speaker ke liye confirm karne ke liye call kar rahi hoon. Kya main Rahul ji se baat kar rahi hoon?',
+        text: 'Namaste Rahul ji, main Octxai AI bol rahi hoon. Aapka order Bluetooth Speaker ke liye confirm karne ke liye call kar rahi hoon. Kya main Rahul ji se baat kar rahi hoon?',
       },
       { speaker: 'Customer', time: '10:30 AM', text: 'Haan ji bol raha hoon.' },
       {
@@ -436,7 +436,7 @@ export const INITIAL_CALL_TEMPLATES: CallTemplate[] = [
     language: 'Hindi / Hinglish',
     voice: 'Neha (Hindi)',
     script:
-      'Namaste {{customer_name}} ji, main SellerSaathi AI bol rahi hoon {{store_name}} se. Aapka {{product_name}} ka ₹{{amount}} ka COD order confirm karne ke liye call kiya hai. Kya ye order confirm hai?',
+      'Namaste {{customer_name}} ji, main Octxai AI bol rahi hoon {{store_name}} se. Aapka {{product_name}} ka ₹{{amount}} ka COD order confirm karne ke liye call kiya hai. Kya ye order confirm hai?',
     active: true,
   },
   {
@@ -641,7 +641,7 @@ export const INITIAL_AUTO_REPLIES: AutoReplyRule[] = [
     id: 'ar-1',
     keyword: 'TRACK',
     matchType: 'Contains',
-    replyMessage: 'Here is your live courier tracking link for your latest order: https://track.sellersaathi.in/{{awb}}',
+    replyMessage: 'Here is your live courier tracking link for your latest order: https://track.Octxai.in/{{awb}}',
     triggeredCount: 842,
     enabled: true,
   },
@@ -963,7 +963,7 @@ export const INITIAL_NOTIFICATIONS: NotificationItem[] = [
 
 export const INITIAL_SELLER_SETTINGS: SellerSettingsState = {
   fullName: 'Aman Kumar',
-  email: 'aman.kumar@sellersaathi.com',
+  email: 'aman.kumar@Octxai.com',
   phone: '+91 98765 43210',
   businessName: 'Aman Store',
   businessType: 'Online Seller',

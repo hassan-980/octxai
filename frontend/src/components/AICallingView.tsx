@@ -168,7 +168,7 @@ export const AICallingView: React.FC<AICallingViewProps> = ({
   const handleDownloadRecording = () => {
     if (!selectedCall) return;
     const text = [
-      `SellerSaathi AI Call Transcript & Metadata`,
+      `Octxai AI Call Transcript & Metadata`,
       `Order ID: ${selectedCall.id}`,
       `Customer: ${selectedCall.name} (${selectedCall.phone})`,
       `Voice: ${selectedCall.voice} | Duration: ${selectedCall.duration} | Status: ${selectedCall.status}`,
@@ -213,7 +213,7 @@ export const AICallingView: React.FC<AICallingViewProps> = ({
         {
           speaker: `AI (${newVoice.split(' ')[0]})`,
           time: 'Just now',
-          text: `Namaste ${name} ji, SellerSaathi AI bol rahi hoon. Aapka ${newProduct} order ₹${newAmount} confirm karne ke liye call kiya hai.`,
+          text: `Namaste ${name} ji, Octxai AI bol rahi hoon. Aapka ${newProduct} order ₹${newAmount} confirm karne ke liye call kiya hai.`,
         },
         { speaker: 'Customer', time: 'Just now', text: 'Haan ji, order confirm hai, address bilkul sahi hai.' },
       ],

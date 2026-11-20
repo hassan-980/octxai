@@ -74,7 +74,7 @@ export const OrdersView: React.FC<OrdersViewProps> = ({
 
   const handleExport = () => {
     downloadCSV(
-      'sellersaathi-orders.csv',
+      'Octxai-orders.csv',
       ['Order ID', 'Customer', 'Phone', 'Product', 'Amount', 'Payment', 'Channel', 'Status', 'City'],
       filteredOrders.map((o) => [o.id, o.customer, o.phone, o.product, o.amount, o.paymentMode, o.channel, o.status, o.city])
     );

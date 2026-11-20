@@ -71,7 +71,7 @@ export const TrackingView: React.FC<TrackingViewProps> = ({
 
   const handleExport = () => {
     downloadCSV(
-      'sellersaathi-shipments.csv',
+      'Octxai-shipments.csv',
       ['Order ID', 'Customer', 'Phone', 'Courier', 'AWB', 'Status', 'Pickup Date', 'Est Delivery'],
       filteredShipments.map((s) => [s.orderId, s.customer, s.phone, s.courier, s.awb, s.status, s.pickupDate, s.eta])
     );

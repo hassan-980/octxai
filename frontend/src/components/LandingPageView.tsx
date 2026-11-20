@@ -83,7 +83,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
           Automate calls, WhatsApp &amp; delivery updates with <span className="text-[#2563EB]">quiet precision.</span>
         </h1>
         <p className="mt-5 text-[16px] sm:text-[18px] text-slate-600 max-w-2xl mx-auto leading-relaxed font-normal">
-          SellerSaathi helps Amazon, Flipkart, and D2C sellers verify COD orders via human-like Hindi/Hinglish AI calls, send instant WhatsApp updates, and reduce NDR returns.
+          Octxai helps Amazon, Flipkart, and D2C sellers verify COD orders via human-like Hindi/Hinglish AI calls, send instant WhatsApp updates, and reduce NDR returns.
         </p>
 
         {/* Hero Actions */}
@@ -119,7 +119,7 @@ export const LandingPageView: React.FC<LandingPageViewProps> = ({
                 <div className="w-7 h-7 rounded-lg bg-[#2563EB] flex items-center justify-center text-white">
                   <Layers className="w-4 h-4" />
                 </div>
-                <span className="font-display font-semibold text-[15px] text-slate-900">SellerSaathi Workspace</span>
+                <span className="font-display font-semibold text-[15px] text-slate-900">Octxai Workspace</span>
                 <span className="text-xs text-slate-400">·</span>
                 <span className="text-xs font-medium text-slate-500">Interactive Live Preview</span>
               </div>
